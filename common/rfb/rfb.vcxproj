@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B97BFA58-96ED-414F-A193-86ED631FD20E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>rfb</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\vsgit\tigervnc\common\rfb\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rfb.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">rfb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\vsgit\tigervnc\common\rfb\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rfb.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">rfb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\vsgit\tigervnc\common\rfb\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">rfb.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">rfb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\vsgit\tigervnc\common\rfb\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">rfb.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">rfb</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -Wformat=2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\libjpeg-turbo\include;E:\vsgit\tigervnc;E:\vsgit\tigervnc\common;E:\vsgit\tigervnc\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BUILD_TIMESTAMP="";_WIN32_WINNT=0x0600;HAVE_CONFIG_H;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BUILD_TIMESTAMP=\"\";_WIN32_WINNT=0x0600;HAVE_CONFIG_H;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\libjpeg-turbo\include;E:\vsgit\tigervnc;E:\vsgit\tigervnc\common;E:\vsgit\tigervnc\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\libjpeg-turbo\include;E:\vsgit\tigervnc;E:\vsgit\tigervnc\common;E:\vsgit\tigervnc\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -Wformat=2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\libjpeg-turbo\include;E:\vsgit\tigervnc;E:\vsgit\tigervnc\common;E:\vsgit\tigervnc\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UndefinePreprocessorDefinitions>NDEBUG</UndefinePreprocessorDefinitions>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILD_TIMESTAMP="";_WIN32_WINNT=0x0600;HAVE_CONFIG_H;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILD_TIMESTAMP=\"\";_WIN32_WINNT=0x0600;HAVE_CONFIG_H;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\libjpeg-turbo\include;E:\vsgit\tigervnc;E:\vsgit\tigervnc\common;E:\vsgit\tigervnc\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\libjpeg-turbo\include;E:\vsgit\tigervnc;E:\vsgit\tigervnc\common;E:\vsgit\tigervnc\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -Wformat=2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\libjpeg-turbo\include;E:\vsgit\tigervnc;E:\vsgit\tigervnc\common;E:\vsgit\tigervnc\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UndefinePreprocessorDefinitions>NDEBUG</UndefinePreprocessorDefinitions>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILD_TIMESTAMP="";_WIN32_WINNT=0x0600;HAVE_CONFIG_H;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILD_TIMESTAMP=\"\";_WIN32_WINNT=0x0600;HAVE_CONFIG_H;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\libjpeg-turbo\include;E:\vsgit\tigervnc;E:\vsgit\tigervnc\common;E:\vsgit\tigervnc\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\libjpeg-turbo\include;E:\vsgit\tigervnc;E:\vsgit\tigervnc\common;E:\vsgit\tigervnc\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -Wformat=2 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\libjpeg-turbo\include;E:\vsgit\tigervnc;E:\vsgit\tigervnc\common;E:\vsgit\tigervnc\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UndefinePreprocessorDefinitions>NDEBUG</UndefinePreprocessorDefinitions>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILD_TIMESTAMP="";_WIN32_WINNT=0x0600;HAVE_CONFIG_H;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BUILD_TIMESTAMP=\"\";_WIN32_WINNT=0x0600;HAVE_CONFIG_H;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\libjpeg-turbo\include;E:\vsgit\tigervnc;E:\vsgit\tigervnc\common;E:\vsgit\tigervnc\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\libjpeg-turbo\include;E:\vsgit\tigervnc;E:\vsgit\tigervnc\common;E:\vsgit\tigervnc\win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\Blacklist.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\CConnection.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\CMsgHandler.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\CMsgReader.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\CMsgWriter.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\CSecurityPlain.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\CSecurityStack.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\CSecurityVeNCrypt.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\CSecurityVncAuth.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\ComparingUpdateTracker.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\Configuration.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\ConnParams.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\CopyRectDecoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\Cursor.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\DecodeManager.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\Decoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\d3des.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">CompileAsC</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">CompileAsC</CompileAs>
+    </ClCompile>
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\EncodeManager.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\Encoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\HTTPServer.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\HextileDecoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\HextileEncoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\JpegCompressor.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\JpegDecompressor.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\KeyRemapper.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\LogWriter.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\Logger.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\Logger_file.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\Logger_stdio.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\Password.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\PixelBuffer.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\PixelFormat.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\RREEncoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\RREDecoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\RawDecoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\RawEncoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\Region.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\SConnection.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\SMsgHandler.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\SMsgReader.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\SMsgWriter.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\ServerCore.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\Security.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\SecurityServer.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\SecurityClient.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\SSecurityPlain.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\SSecurityStack.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\SSecurityVncAuth.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\SSecurityVeNCrypt.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\ScaleFilters.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\Timer.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\TightDecoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\TightEncoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\TightJPEGEncoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\UpdateTracker.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\VNCSConnectionST.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\VNCServerST.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\ZRLEEncoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\ZRLEDecoder.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\encodings.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\util.cxx" />
+    <ClCompile Include="E:\vsgit\tigervnc\common\rfb\WinPasswdValidator.cxx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:/vsgit/tigervnc/common/Xregion/Xregion.vcxproj">
+      <Project>DF9DC826-F372-497D-B4A9-E2BD6CF07ECC</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/vsgit/tigervnc/common/os/os.vcxproj">
+      <Project>A086590B-6B19-45D6-99F6-F37A6AAA65E6</Project>
+    </ProjectReference>
+    <ProjectReference Include="E:/vsgit/tigervnc/common/rdr/rdr.vcxproj">
+      <Project>4FE6617D-8A4A-462E-B855-1C8D66BD556A</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
